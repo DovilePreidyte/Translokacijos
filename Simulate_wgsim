@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Generate simulated reads
+# -N number if reads
+# -1 read length of first pair
+# -2 read length of second pair
+# -e error rate
+# -f mutation rate
+# - input file
+# - first output file
+# - second output file
+
+printf "\nGenerating simulated reads\n"
+
+./wgsim -N$1 -1$2 -2$3 -d0 -S11 -e$4 -r$5 $6.fa $7.fq $8.fq /dev/null
+
