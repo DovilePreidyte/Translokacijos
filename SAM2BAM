@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#-b BAM file name
+#-S SAM file name
+
+samtools view -b -S -o  $1 $2
+
