@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#$1 - BAM file name
+#$2 - Sorted file name
+#$3 - sorted.bam file name
+
+samtools sort $1 $2
+samtools index $3
