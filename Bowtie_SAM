@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#-x - indexes
+#-1 - first .fq file
+#-2 - second .fq file
+#-S - SAM file name
+
+bowtie2 -x $1 -1 $1 -2 $3 -S $4
